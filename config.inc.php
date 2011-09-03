@@ -30,7 +30,7 @@ $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
 $cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['connect_type'] = 'socket';
-$cfg['Servers'][$i]['socket']       = '/tmp/mysql/willene.sock';
+$cfg['Servers'][$i]['socket']       = 'localhost;unix_socket=/tmp/mysql/willene.sock';
 $cfg['Servers'][$i]['compress'] = false;
 /* Select mysqli if your server has it */
 $cfg['Servers'][$i]['extension'] = 'mysql';
